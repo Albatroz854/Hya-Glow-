@@ -1,82 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hya Glow - Natural Face Wash</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hungry Trash Can</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header Section -->
-  <header id="home">
-    <nav>
-      <div class="logo">Hya Glow</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <h1>Glow Naturally with <span>Hya Glow</span></h1>
-      <p>Experience the power of water hyacinth for a healthier, glowing skin.</p>
-      <div class="buttons">
-        <a href="#about" class="cta-btn">Discover More</a>
-        <a href="#products" class="cta-btn secondary">Shop Now</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2>About Hya Glow</h2>
-      <p>Hya Glow is a natural skincare brand harnessing the purifying properties of water hyacinth to create sustainable and effective skincare products. Our focus is on providing deep cleansing, acne control, and hydration while promoting eco-friendly practices.</p>
-    </div>
-  </section>
-
-  <!-- Products Section -->
-  <section id="products">
-    <div class="container">
-      <h2>Our Products</h2>
-      <div class="product-list">
-        <div class="product-item">
-          <h3>Hya Glow Face Wash</h3>
-          <p>A gentle cleanser made with water hyacinth for glowing, refreshed skin.</p>
+    <!-- Home Page -->
+    <div id="home-page">
+        <h1>Select your Pettandi</h1>
+        <div id="choices">
+            <div class="choice" data-type="trash">
+                <img src="images/trash1.png" alt="Trash 1">
+            </div>
+            <div class="choice" data-type="non-trash">
+                <img src="images/trash2.png" alt="Trash 2">
+            </div>
         </div>
-        <div class="product-item">
-          <h3>Hydrating Face Mist</h3>
-          <p>A cooling mist to hydrate and soothe your skin instantly.</p>
-        </div>
-        <div class="product-item">
-          <h3>Anti-Acne Gel</h3>
-          <p>A lightweight gel to target pimples and prevent breakouts.</p>
-        </div>
-      </div>
     </div>
-  </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <p>Have questions or want to know more about our products? Reach out to us!</p>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="cta-btn">Send Message</button>
-      </form>
-      <p class="email-contact">Or email us directly at: <a href="mailto:achuvasu477@gmail.com">achuvasu477@gmail.com</a></p>
+    <!-- Game Page -->
+    <div id="game-container" class="hidden">
+        <div id="score">Score: <span id="score-value">0</span></div>
+        <div id="lives">Lives: <span id="lives-value">♥♥♥</span></div>
+        <div id="trash-can"></div>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>© 2024 Hya Glow. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
